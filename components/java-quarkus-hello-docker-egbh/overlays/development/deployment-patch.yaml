@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-hello-docker-egbh
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/quarkus/java-quarkus-hello-docker-egbh@sha256:3f9b05a336a045402a00222e6718712d1a71a9ec63eae2b86db27fcbd82f328d
+        name: my-java-quarkus
+        resources: {}
+status: {}
